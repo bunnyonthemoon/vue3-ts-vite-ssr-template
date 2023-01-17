@@ -1,0 +1,21 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Client Dev",
+            "request": "launch",
+            "runtimeArgs": ["dev"],
+            "runtimeExecutable": "yarn",
+            "skipFiles": ["<node_internals>/**"],
+            "type": "node"
+        },
+        {
+            "name": "Server",
+            "request": "launch",
+            "runtimeArgs": ["server-dev"],
+            "runtimeExecutable": "yarn",
+            "skipFiles": ["<node_internals>/**"],
+            "type": "node"
+        }
+    ]
+}

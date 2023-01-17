@@ -1,0 +1,18 @@
+{
+    "include": [],
+    "exclude": ["node_modules"],
+    "references": [
+        {
+            "path": "./tsconfig.vue.json"
+        },
+        {
+            "path": "./tsconfig.config.json"
+        },
+        {
+            "path": "./tsconfig.server.json"
+        }
+    ],
+    "vueCompilerOptions": {
+        "plugins": ["@volar/vue-language-plugin-pug"]
+    }
+}

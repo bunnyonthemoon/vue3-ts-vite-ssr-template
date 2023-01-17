@@ -1,0 +1,26 @@
+{
+    "include": ["./server/**/*.ts"],
+    "files": ["./env.ts"],
+    "exclude": [],
+    "compilerOptions": {
+        "target": "ES6",
+        "module": "CommonJS",
+        "moduleResolution": "Node",
+        "baseUrl": "./",
+        "rootDir": "./",
+        "outDir": "./dist/server",
+        "esModuleInterop": true,
+        "strict": true,
+        "resolveJsonModule": true,
+        "skipDefaultLibCheck": true,
+        "skipLibCheck": true,
+        "allowJs": true,
+        "composite": true,
+        "paths": {
+            "@/*": ["./*"]
+        }
+    },
+    "ts-node": {
+        "require": ["tsconfig-paths/register"]
+    }
+}

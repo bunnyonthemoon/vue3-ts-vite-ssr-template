@@ -1,0 +1,19 @@
+{
+    "extends": "@vue/tsconfig/tsconfig.web.json",
+    "include": ["**/*.ts", "**/*.vue"],
+    "files": ["./env.ts", "core/types/vite.d.ts", "core/types/vue.shims.d.ts"],
+    "exclude": ["server, node_modules"],
+    "compilerOptions": {
+        "module": "ES2020",
+        "baseUrl": ".",
+        "esModuleInterop": true,
+        "composite": true,
+        "paths": {
+            "@/*": ["./*"]
+        }
+    },
+
+    "vueCompilerOptions": {
+        "plugins": ["@volar/vue-language-plugin-pug"]
+    }
+}
